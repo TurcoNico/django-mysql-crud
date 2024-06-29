@@ -3,7 +3,7 @@ from django.shortcuts import render,redirect
 from django.http import HttpResponse
 # Create your views here.
 import mysql.connector as mcdb
-conn = mcdb.connect(host="localhost", user="root", passwd="", database='db_ecom_stock')
+conn = mcdb.connect(host="mysql", user="root", passwd="root", database='db')
 print('Successfully connected to database')
 cur = conn.cursor()
 
